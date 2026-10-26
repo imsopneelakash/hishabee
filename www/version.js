@@ -1,1 +1,1 @@
-window.LATEST={v:3,url:"https://hishabee-ghor.vercel.app/masik-hisab.apk",note:"নতুন আপডেট: আপডেট নোটিফিকেশন যোগ হয়েছে।"};
+window.LATEST={v:5,url:"https://hishabee-ghor.vercel.app/masik-hisab.apk",note:"নতুন ডিজাইন: ড্যাশবোর্ড, বিশ্লেষণ চার্ট, ক্যালেন্ডার ও নতুন নেভিগেশন।"};
