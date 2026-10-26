@@ -16,8 +16,14 @@ jobs:
         continue-on-error: true
       - run: rm -f www/*.apk
       - run: npx cap sync android
-      - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
+      - run: cd android && chmod +x gradlew && ./gradlew assembleRelease
+      - name: Sign APK
+        run: |
+          echo "${{ secrets.KEYSTORE_B64 }}" | base64 -d > $RUNNER_TEMP/ks.jks
+          BT=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)
+          $BT/zipalign -f -p 4 android/app/build/outputs/apk/release/app-release-unsigned.apk $RUNNER_TEMP/a.apk
+          $BT/apksigner sign --ks $RUNNER_TEMP/ks.jks --ks-pass pass:${{ secrets.KS_PASS }} --ks-key-alias masik --out masik-hisab.apk $RUNNER_TEMP/a.apk
       - uses: actions/upload-artifact@v4
         with:
           name: masik-hisab-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: masik-hisab.apk
