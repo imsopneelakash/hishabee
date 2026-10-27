@@ -1,1 +1,1 @@
-window.LATEST={v:7,url:"https://hishabee-ghor.vercel.app/masik-hisab.apk",note:"নতুন ড্যাশবোর্ড: ৩ডি গ্রাফ ও চার্ট।"};
+window.LATEST={v:8,url:"https://hishabee-ghor.vercel.app/masik-hisab.apk",note:"ব্যাকআপ এখন ফাইল হিসেবে শেয়ার ও ইমপোর্ট করা যাবে।"};
