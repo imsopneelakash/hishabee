@@ -1,1 +1,1 @@
-window.LATEST={v:12,url:"https://hishabee-ghor.vercel.app/masik-hisab.apk",note:"প্রোফাইল ছবি, ইমেইল, Log Out (অ্যাপ লক), সাহায্য পেজ ও মাসভিত্তিক বাজেট।"};
+window.LATEST={v:13,url:"https://hishabee-ghor.vercel.app/masik-hisab.apk",note:"New Expenses screen with donut chart, improved Reports overview, full-page Add Expense and transaction time."};
